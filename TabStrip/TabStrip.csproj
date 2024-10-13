@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+
+	  <PackageId>TabStrip</PackageId>
+	  <Description>Fast сolored textbox control</Description>
+	  <Version>1.0.0</Version>
+	  <Authors>SAM Enterprise</Authors>
+	  <Company>SAM Enterprise</Company>
+	  <Copyright>Copyright © SAM Enterprise 2006</Copyright>
+	  <Title>TabStrip</Title>
+  </PropertyGroup>
+</Project>

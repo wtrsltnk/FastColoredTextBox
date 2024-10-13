@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Data;
 using System.Drawing.Drawing2D;
-using System.Text;
 using System.Windows.Forms;
 
 namespace FastColoredTextBoxNS
@@ -43,9 +40,9 @@ namespace FastColoredTextBoxNS
         /// <summary>
         /// Scale
         /// </summary>
-        [Description("Scale")]
+        [Description("MapScale")]
         [DefaultValue(0.3f)]
-        public float Scale
+        public float MapScale
         {
             get { return scale; }
             set
@@ -136,7 +133,7 @@ namespace FastColoredTextBoxNS
             if (target == null)
                 return;
 
-            var zoom = this.Scale * 100 / target.Zoom;
+            var zoom = this.MapScale * 100 / target.Zoom;
 
             if (zoom <= float.Epsilon)
                 return;
@@ -218,7 +215,7 @@ namespace FastColoredTextBoxNS
             if (target == null)
                 return;
 
-            var zoom = this.Scale*100/target.Zoom;
+            var zoom = MapScale*100/target.Zoom;
 
             if (zoom <= float.Epsilon)
                 return;

@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using FastColoredTextBoxNS;
 using Tester.DiffMergeStuffs;
+using Range = FastColoredTextBoxNS.Range;
 
 namespace Tester
 {
@@ -423,6 +424,11 @@ namespace Tester
             public override string ToString()
             {
                 return line;
+            }
+
+            public override int GetHashCode()
+            {
+                return line.GetHashCode();
             }
         }
 
